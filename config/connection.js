@@ -12,15 +12,23 @@ let sequelize;
 //   sequelize = new Sequelize(process.env.JAWSDB_URL);
 // } else {
   sequelize = new Sequelize(
-    process.env.DB_NAME,
-    process.env.DB_USER,
-    process.env.DB_PASSWORD,
+    'z2n0wptcdstbbu2d',
+    'b8jc9lt9p70rvzxe',
+    'r0mohk99twryyibj',
     {
-      host: process.env.DB_HOST,
+      host: 'bbj31ma8tye2kagi.cbetxkdyhwsb.us-east-1.rds.amazonaws.com',
       dialect: 'mysql',
-      port: process.env.PORT
+      port: 3306
     }
   );
 // }
 
 module.exports = sequelize;
+
+/**
+ * DB_NAME='z2n0wptcdstbbu2d'
+DB_PASSWORD='r0mohk99twryyibj'
+DB_USER='b8jc9lt9p70rvzxe'
+DB_HOST='bbj31ma8tye2kagi.cbetxkdyhwsb.us-east-1.rds.amazonaws.com'
+PORT=3306
+ */
